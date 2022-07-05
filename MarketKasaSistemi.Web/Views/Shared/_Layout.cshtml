@@ -1,0 +1,51 @@
+﻿@using System.Web.Optimization
+@using MarketKasaSistemi.Entities
+@{
+    Kullanici giris = HttpContext.Current.Session["User"] as Kullanici;
+        }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/bundles/css")
+</head>
+<body class="light" id="bodyContain">
+    <nav class="col-12 col-md-5 col-lg-4 max-height position-absolute drawerClose bg-prm" id="drawer">
+        <div class="col-12 fs-1 p-3 white">
+            <i class="fa fa-moon-o pointer" id="moon"></i>
+            <i class="fa fa-lightbulb-o d-none pointer" id="bulb"></i>
+            <i class="fa fa-arrow-left text-end float-end mt-2 mx-3 pointer" id="drawerArrow"></i>
+        </div>
+        <div class="col-12 text-center fw-bold white">
+            <h2>@giris.Personel.PersonelAd @giris.Personel.PersonelSoyad</h2>
+            <h4>@giris.Personel.PersonelTip.PersonelTipAd</h4>
+        </div>
+        <div class="col-12 fs-2 mt-5">
+            <a href="~/Home/Satis" class="d-block menu-item"><i class="fa fa-cart-plus col-1 ms-2"></i> SATIŞ</a>
+            <a href="~/Home/Barkod" class="d-block menu-item"><i class="fa fa-search col-1 ms-2"></i> BARKOD</a>
+            <a href="~/Home/IadeEt" class="d-block menu-item"><i class="fa fa-money col-1 ms-2"></i> İADE ET</a>
+            <a href="~/Home/ZRaporu" class="d-block menu-item"><i class="fa fa-file-text col-1 ms-2"></i> Z RAPORU</a>
+            @if(giris.Personel.PersonelTip.Id == 1) { 
+            <a href="#" class="d-block menu-item" id="dropMyLinks"><i class="fa fa-cogs col-1 ms-2"></i> YÖNETİCİ MENÜSÜ</a>
+            <div id="dropLinks" class="d-none">
+                <a href="@Url.Action("Index", "Kullanicilar", new {Area = "Yonetim"})" class="d-block menu-item fs-4"><i class="fa fa-dot-circle-o col-1 ms-4"></i> KULLANICILAR</a>
+                <a href="@Url.Action("Index","Personeller",new {Area = "Yonetim"})" class="d-block menu-item fs-4"><i class="fa fa-dot-circle-o col-1 ms-4"></i> PERSONELLER</a>
+                <a href="@Url.Action("Index","Urunler",new {Area = "Yonetim"})" class="d-block menu-item fs-4"><i class="fa fa-dot-circle-o col-1 ms-4"></i> ÜRÜNLER</a>
+                <a href="@Url.Action("Index","Kategoriler",new {Area = "Yonetim"})" class="d-block menu-item fs-4"><i class="fa fa-dot-circle-o col-1 ms-4"></i> KATEGORİLER</a>
+            </div>
+            }
+            <a href="~/Login/Logout" class="d-block menu-item position-absolute bottom-0 w-100 text-center"><i class="fa fa-sign-out col-1 ms-2"></i> ÇIKIŞ YAP</a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="col-12 fs-1 prm-one">
+            <i class="fa fa-bars col-1 d-inline text-center pointer" id="drawerBurger"></i>
+            <h1 class="col-4 col-sm-11 offset-4 offset-sm-0 text-sm-center d-inline-block text-uppercase">@ViewBag.Title</h1>
+        </div>
+        @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/js")
+</body>
+</html>

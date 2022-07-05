@@ -1,0 +1,37 @@
+﻿@using MarketKasaSistemi.Entities
+@model List<Kullanici>
+@{
+    ViewBag.Title = "Kullanıcılar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="table-responsive mt-2">
+        <table class="table border border-2 col-12">
+            <thead>
+                <tr class="w-100 prm-one">
+                    <th scope="col" class="fw-bold">ID</th>
+                    <th scope="col" class="fw-bold">KULLANICI ADI</th>
+                    <th scope="col" class="fw-bold">PERSONEL</th>
+                    <th scope="col" class="fw-bold">TÜR</th>
+                    <th scope="col" class="fw-bold">İŞLEMLER</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row" class="table-id">@item.Id</th>
+                        <td>@item.KullaniciAd</td>
+                        <td>@item.Personel.PersonelAd @item.Personel.PersonelSoyad</td>
+                        <td>@item.Personel.PersonelTipAd</td>
+                        <td>
+                            <a href="@Url.Action("Duzenle", "Kullanicilar", new {id=item.Id})" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i></a>
+                            <a href="@Url.Action("Sil", "Kullanicilar", new {id=item.Id})" class="btn btn-danger btn-sm"><i class="fa fa-close"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

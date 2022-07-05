@@ -1,0 +1,55 @@
+﻿@using MarketKasaSistemi.Entities
+@model Kullanici 
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<div class="row light max-height light-login">
+    <div class="col-2 p-4">
+        <a href="@Url.Action("Login","Login")">
+            <i class="fa fa-arrow-left fs-1 prm-one"></i>
+        </a>
+    </div>
+    <div class="col-10 mx-auto">
+        <div class="col-10 text-center fa-rotate-90 mt-5">
+            <img class="my-5 mx-auto" src="~/Images/logo.png" />
+        </div>
+        @using (Html.BeginForm("Register", "Login", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken();
+            @Html.ValidationSummary();
+
+            <div class="mt-5 mb-3 col-10">
+                @Html.LabelFor(x => x.KullaniciAd, new { @class = "form-label fw-bolder" })
+                <div>
+                    @Html.TextBoxFor(x => x.KullaniciAd, new { @class = "form-control fs-3", @placeholder = "Kullanıcı Adı" })
+                </div>
+            </div>
+            <div class="mb-3 col-10">
+                @Html.LabelFor(x => x.KullaniciSifre, new { @class = "form-label fw-bolder" })
+                <div>
+                    @Html.PasswordFor(x => x.KullaniciSifre, new { @class = "form-control fs-3", @placeholder = "Şifre" })
+                </div>
+            </div>
+            <div class="mb-3 col-10">
+                @Html.LabelFor(x => x.Personel, new { @class = "form-label fw-bolder" })
+                <div>
+                    @Html.DropDownListFor(x => x.Personel.Id, ViewBag.Personeller as SelectList, "Personel Seçiniz...", new { @class = "form-control fs-3" })
+                </div>
+            </div>
+            <div class="mb-5 col-10">
+                <div class="col-md-12">
+                    <button type="submit" class="btn-light-primary w-100 fs-2 py-2 fw-bold">
+                        KAYIT OL
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-10 text-center">
+                Zaten bir hesabınız var mı ?
+                <a href="@Url.Action("Login","Login")" class="fw-bold login-link">Giriş Yapın</a>
+            </div>
+        }
+    </div>
+</div>

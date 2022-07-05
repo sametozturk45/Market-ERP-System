@@ -1,0 +1,18 @@
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.Entities\bin\Debug\MarketKasaSistemi.Entities.dll
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.Entities\bin\Debug\MarketKasaSistemi.Entities.pdb
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.Entities\obj\Debug\MarketKasaSistemi.Entities.csproj.AssemblyReference.cache
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.Entities\obj\Debug\MarketKasaSistemi.Entities.csproj.CoreCompileInputs.cache
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.Entities\obj\Debug\MarketKasaSistemi.Entities.dll
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.Entities\obj\Debug\MarketKasaSistemi.Entities.pdb
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.Entities\bin\Debug\MarketKasaSistemi.Entities.dll
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.Entities\bin\Debug\MarketKasaSistemi.Entities.pdb
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.Entities\obj\Debug\MarketKasaSistemi.Entities.csproj.AssemblyReference.cache
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.Entities\obj\Debug\MarketKasaSistemi.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.Entities\obj\Debug\MarketKasaSistemi.Entities.dll
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.Entities\obj\Debug\MarketKasaSistemi.Entities.pdb
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.Entities\bin\Debug\MarketKasaSistemi.Entities.dll
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.Entities\bin\Debug\MarketKasaSistemi.Entities.pdb
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.Entities\obj\Debug\MarketKasaSistemi.Entities.csproj.AssemblyReference.cache
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.Entities\obj\Debug\MarketKasaSistemi.Entities.csproj.CoreCompileInputs.cache
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.Entities\obj\Debug\MarketKasaSistemi.Entities.dll
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.Entities\obj\Debug\MarketKasaSistemi.Entities.pdb

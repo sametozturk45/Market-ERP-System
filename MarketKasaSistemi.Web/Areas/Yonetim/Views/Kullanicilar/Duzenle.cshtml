@@ -1,0 +1,31 @@
+﻿@using MarketKasaSistemi.Entities
+@model Kullanici
+@{
+    ViewBag.Title = "Duzenle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-12">
+    @using (Html.BeginForm("Duzenle", "Kullanicilar", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken();
+        @Html.ValidationSummary();
+        <div class="mb-3">
+            @Html.LabelFor(x => x.KullaniciAd, new { @class = "form-label offset-4 prm-one" })
+            <div class="col-md-4 mx-auto">
+                @Html.TextBoxFor(x => x.KullaniciAd, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="mb-3">
+            @Html.LabelFor(x => x.KullaniciSifre, new { @class = "form-label offset-4 prm-one" })
+            <div class="col-md-4 mx-auto">
+                @Html.TextBoxFor(x => x.KullaniciSifre, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="col-md-3 mx-auto">
+                <a href="@Url.Action("Index","Kullanicilar")" class="btn btn-danger ms-5"><i class="fa fa-close"></i> İptal</a>
+                <button type="submit" class="btn btn-warning"><i class="fa fa-thumbs-up"></i> Güncelle</button>
+            </div>
+        </div>
+    }
+</div>

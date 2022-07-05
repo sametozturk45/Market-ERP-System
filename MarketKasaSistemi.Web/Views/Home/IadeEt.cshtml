@@ -1,0 +1,67 @@
+﻿@using MarketKasaSistemi.Entities
+@model List<Satis>
+@{
+    ViewBag.Title = "İade Et";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    decimal toplamTutar = 0;
+}
+<div class="row">
+    <div class="col-12">
+        <div class="float-end">
+            @using (Html.BeginForm("IadeEt", "Home", FormMethod.Post)) {
+                @Html.AntiForgeryToken();
+                @Html.ValidationSummary();
+            <div class="d-inline-block">
+                <input type="number" name="fisno" id="fisno" class="form-control form-control-sm" placeholder="Fiş Giriniz" />
+    @*@Html.TextBoxFor(x=>x., new { @class = "form-control form-control-sm", @type = "number", @placeholder = "Fiş Giriniz", })*@
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-search"></i></button>
+            }
+        </div>
+    </div>
+    <div class="table-responsive mt-2">
+        <table class="table border border-2 col-12">
+            <thead>
+                <tr class="w-100 prm-one">
+                    <th scope="col" class="fw-bold">BARKOD</th>
+                    <th scope="col" class="fw-bold">AD</th>
+                    <th scope="col" class="fw-bold">KATEGORİ</th>
+                    <th scope="col" class="fw-bold">ADET</th>
+                    <th scope="col" class="fw-bold">FİYAT</th>
+                    <th scope="col" class="fw-bold">VERGİ</th>
+                    <th scope="col" class="fw-bold">TOPLAM</th>
+                    <th scope="col" class="fw-bold">İŞLEMLER</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <th scope="row" class="table-id">@item.UrunBarkod</th>
+                            <td>@item.UrunAd</td>
+                            <td>@item.Urun.KategoriAd</td>
+                            <td>@item.SatisAdet</td>
+                            <td>@item.Urun.UrunFiyat</td>
+                            <td>@item.Urun.Vergi.VergiMiktar%</td>
+                            <td>@item.ToplamKdvliFiyat₺</td>
+                            <td>
+                                <a href="@Url.Action("IadeUrunGuncelle", "Home", new {id = item.Id})" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i></a>
+                                <a href="@Url.Action("SatisSil", "Home", new {id = item.Id})" class="btn btn-danger btn-sm"><i class="fa fa-close"></i></a>
+                            </td>
+                        </tr>
+                        toplamTutar += item.ToplamKdvliFiyat;
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-12 mt-2">
+        <h3 class="d-inline-block col-6 fs-5 prm-one">Toplam Tutar :<span class="fw-bold">₺@toplamTutar</span></h3>
+        <div class="float-end">
+            <a href="@Url.Action("IadeEt","Home")" class="btn btn-danger btn-lg"><i class="fa fa-close"></i> SIFIRLA</a>
+            <button class="btn btn-success btn-lg" type="submit"><i class="fa fa-check"></i> FİŞİ Onayla</button>
+        </div>
+    </div>
+</div>

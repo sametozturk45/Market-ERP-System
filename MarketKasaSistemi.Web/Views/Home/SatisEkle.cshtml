@@ -1,0 +1,32 @@
+﻿@using MarketKasaSistemi.Entities
+@model Satis
+@{
+    ViewBag.Title = "Satış Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-12">
+    @using (Html.BeginForm("SatisEkle", "Home", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken();
+        @Html.ValidationSummary();
+        <div class="mb-3">
+            @Html.LabelFor(x => x.UrunBarkod, new { @class = "form-label offset-4 prm-one" })
+            <div class="col-md-4 mx-auto">
+                @Html.TextBoxFor(x => x.UrunBarkod, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="mb-3">
+            @Html.LabelFor(x => x.SatisAdet, new { @class = "form-label offset-4 prm-one" })
+            <div class="col-md-4 mx-auto">
+                @Html.TextBoxFor(x => x.SatisAdet, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="col-md-3 mx-auto">
+                <a href="@Url.Action("SatisIptal","Home")" class="btn btn-danger ms-5"><i class="fa fa-close"></i> İptal</a>
+                <button type="submit" class="btn btn-success"><i class="fa fa-plus-circle"></i> Ekle</button>
+            </div>
+        </div>
+    }
+</div>
+

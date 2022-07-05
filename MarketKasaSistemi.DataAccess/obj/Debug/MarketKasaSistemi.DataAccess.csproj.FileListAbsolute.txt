@@ -1,0 +1,36 @@
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.DataAccess.dll
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.DataAccess.pdb
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.csproj.AssemblyReference.cache
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.csproj.CoreCompileInputs.cache
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.dll
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.pdb
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.Entities.dll
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.Entities.pdb
+D:\Calismalarim\WEB\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.csproj.CopyComplete
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.DataAccess.dll
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.DataAccess.pdb
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.Entities.dll
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.Entities.pdb
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.csproj.CopyComplete
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.dll
+C:\Users\Hyuna\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.pdb
+C:\Users\Hyuna\Desktop\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.DataAccess.dll
+C:\Users\Hyuna\Desktop\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.DataAccess.pdb
+C:\Users\Hyuna\Desktop\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.Entities.dll
+C:\Users\Hyuna\Desktop\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.Entities.pdb
+C:\Users\Hyuna\Desktop\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Hyuna\Desktop\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Hyuna\Desktop\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.csproj.CopyComplete
+C:\Users\Hyuna\Desktop\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.dll
+C:\Users\Hyuna\Desktop\Desktop\MarketKasaSistemi\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.pdb
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.DataAccess.dll
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.DataAccess.pdb
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.Entities.dll
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.DataAccess\bin\Debug\MarketKasaSistemi.Entities.pdb
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.csproj.AssemblyReference.cache
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.csproj.CopyComplete
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.dll
+C:\Users\hyuna\OneDrive\Masaüstü\Okuldaki Projelerim\MarketKasaSistemiWeb\MarketKasaSistemi.DataAccess\obj\Debug\MarketKasaSistemi.DataAccess.pdb

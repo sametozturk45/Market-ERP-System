@@ -1,0 +1,64 @@
+﻿@using MarketKasaSistemi.Entities
+@model Kullanici
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<style>
+    .bg-content {
+        background-image: url("/Images/background.jpg");
+    }
+    img {
+        width: 180px
+    }
+</style>
+<div class="row max-height light">
+    <div class="col-sm-8 d-none d-xl-block text-white bg-content">
+        <h1 class="text-center my-5">HOŞGELDİNİZ</h1>
+        <h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget tortor laoreet lacus iaculis faucibus. Etiam mattis, purus eu congue eleifend, elit ipsum feugiat urna, sed imperdiet ex dui at tellus. Nam suscipit, augue consectetur varius maximus, elit mauris posuere nisl, pretium laoreet sem odio eu elit. Nullam ac porttitor massa. Nam eget diam vitae nisi tempus condimentum. Fusce egestas lorem sed lacus euismod, quis vestibulum eros hendrerit. Nunc imperdiet arcu tempus orci auctor, sit amet blandit nunc convallis. Pellentesque a tellus arcu. Vestibulum tempor feugiat est eu suscipit. Cras ullamcorper tincidunt urna, a pellentesque dolor scelerisque ac. Morbi placerat mollis augue, vel sagittis libero eleifend a. Nulla ut sem libero. Nulla dictum massa eu nisl commodo, a vulputate elit vehicula.
+        </h3>
+    </div>
+    <div class="col-12 col-xl-4">
+        <div class="row mt-5">
+            <div class="col-12 text-center fa-rotate-90 mt-5">
+                <img class="my-5 mx-auto" src="~/Images/logo.png" />
+            </div>
+            <div class="col-11 mx-auto mt-5">
+                @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken();
+                    @Html.ValidationSummary();
+
+                    <div class="mt-5 mb-3">
+                        @Html.LabelFor(x => x.KullaniciAd, new { @class = "form-label fw-bolder" })
+                        <div>
+                            @Html.TextBoxFor(x => x.KullaniciAd, new { @class = "form-control fs-3", @placeholder = "Kullanıcı Adı" })
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        @Html.LabelFor(x => x.KullaniciSifre, new { @class = "form-label fw-bolder" })
+                        <div>
+                            @Html.PasswordFor(x => x.KullaniciSifre, new { @class = "form-control fs-3", @placeholder = "Şifre" })
+                        </div>
+                    </div>
+                    <div class="col-12 text-end mb-5">
+                        <a href="#" class="fw-bold login-link">Şifrenizi mi unuttunuz ?</a>
+                    </div>
+                    <div class="mb-5">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn-light-primary w-100 fs-2 py-2 fw-bold">
+                                GİRİŞ YAP
+                                <i class="fa fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        Hesabınız yok mu ?
+                        <a href="@Url.Action("Register","Login")" class="fw-bold login-link">Kayıt Olun</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

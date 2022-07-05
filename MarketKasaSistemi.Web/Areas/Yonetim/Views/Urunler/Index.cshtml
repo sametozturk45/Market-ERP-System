@@ -1,0 +1,46 @@
+﻿@using MarketKasaSistemi.Entities
+@model List<Urun>
+@{
+    ViewBag.Title = "Ürünler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="table-responsive mt-2">
+        <table class="table border border-2 col-12">
+            <thead>
+                <tr class="w-100 prm-one">
+                    <th scope="col" class="fw-bold">ID</th>
+                    <th scope="col" class="fw-bold">AD</th>
+                    <th scope="col" class="fw-bold">FİYAT</th>
+                    <th scope="col" class="fw-bold">KDV'Lİ</th>
+                    <th scope="col" class="fw-bold">STOK</th>
+                    <th scope="col" class="fw-bold">KATEGORİ</th>
+                    <th scope="col" class="fw-bold">VERGİ</th>
+                    <th scope="col" class="text-center">
+                        <a href="@Url.Action("Ekle", "Urunler")" class="btn btn-primary"><i class="fa fa-user-plus"></i> EKLE</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row" class="table-id">@item.Id</th>
+                        <td>@item.UrunAd</td>
+                        <td>@item.UrunFiyat</td>
+                        <td>@item.KdvliUrunFiyat</td>
+                        <td>@item.UrunStokAdet</td>
+                        <td>@item.KategoriAd</td>
+                        <td>@item.VergiMiktar</td>
+                        <td class="text-center">
+                            <a href="@Url.Action("Duzenle", "Urunler", new {id=item.Id})" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i></a>
+                            <a href="@Url.Action("Sil", "Urunler", new {id=item.Id})" class="btn btn-danger btn-sm"><i class="fa fa-close"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

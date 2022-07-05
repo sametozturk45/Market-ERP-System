@@ -1,0 +1,20 @@
+﻿@using MarketKasaSistemi.Entities
+@model Kullanici
+@{
+    ViewBag.Title = "Sil";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 class="mt-4">Sil</h2>
+<hr />
+<p>@Model.KullaniciAd adına sahip kullanıcıyı silmek istediğinize emin misiniz ?</p>
+@using (Html.BeginForm("Sil", "Kullanicilar", FormMethod.Post))
+{
+    @Html.AntiForgeryToken();
+    @Html.ValidationSummary();
+    <div class="mb-3">
+        <div class="col-md-3 mx-auto">
+            <a href="@Url.Action("Index","Kullanicilar")" class="btn btn-warning ms-5"><i class="fa fa-close"></i> İptal</a>
+            <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Sil</button>
+        </div>
+    </div>
+}

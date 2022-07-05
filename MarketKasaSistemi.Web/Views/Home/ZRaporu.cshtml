@@ -1,0 +1,40 @@
+﻿@using MarketKasaSistemi.Entities
+@model List<Satis>
+@{
+    ViewBag.Title = "Z Raporu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    decimal toplamTutar = 0;
+}
+
+<div class="row">
+    <div class="table-responsive mt-2">
+        <table class="table border border-2 col-12">
+            <thead>
+                <tr class="w-100 prm-one">
+                    <th scope="col" class="fw-bold">FİŞ NO</th>
+                    <th scope="col" class="fw-bold">FİŞ TARİH</th>
+                    <th scope="col" class="fw-bold">ÖDEME TİP</th>
+                    <th scope="col" class="fw-bold">TOPLAM FİYAT</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var item in Model)
+                {
+                    <tr>
+                        <th scope="row" class="table-id">@item.Fis.Id</th>
+                        <td>@item.Fis.FisTarih</td>
+                        <td>@item.Fis.OdemeTip.OdemeTipAd</td>
+                        <td>@item.ToplamKdvliFiyat </td>
+                    </tr>
+                    toplamTutar += item.ToplamKdvliFiyat;
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-12 mt-2">
+        <h3 class="d-inline-block col-6 fs-5 prm-one">Toplam Tutar :<span class="fw-bold">₺@toplamTutar</span></h3>
+        <div class="float-end">
+            <button class="btn btn-warning btn-lg" type="submit"><i class="fa fa-print"></i> RAPOR YAZDIR</button>
+        </div>
+    </div>
+</div>

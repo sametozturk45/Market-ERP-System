@@ -1,0 +1,53 @@
+﻿@using MarketKasaSistemi.Entities
+@model Urun
+@{
+    ViewBag.Title = "Barkod";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Barkod", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken();
+    @Html.ValidationSummary();
+    <div class="col-12">
+        <div class="mt-5 col-8 col-sm-5 d-inline-block offset-sm-3">
+            @Html.TextBoxFor(x => x.Id, new { @class = "form-control fs-4",@type="number",@placeholder= "Barkod Giriniz", })
+        </div>
+        <button class="btn btn-primary fs-5 col-3 col-sm-1"><i class="fa fa-search"></i></button>
+    </div>
+}
+
+@if (Model != null)
+{
+    <div class="table-responsive mt-2">
+        <table class="table border border-2 col-12">
+            <thead>
+                <tr class="w-100 prm-one">
+                    <th scope="col" class="fw-bold">BARKOD</th>
+                    <th scope="col" class="fw-bold">AD</th>
+                    <th scope="col" class="fw-bold">KATEGORİ</th>
+                    <th scope="col" class="fw-bold">ADET</th>
+                    <th scope="col" class="fw-bold">FİYAT</th>
+                    <th scope="col" class="fw-bold">VERGİ</th>
+                    <th scope="col" class="fw-bold">TOPLAM</th>
+                    <th scope="col" class="fw-bold">İŞLEMLER</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="table-id">@Model.Id</th>
+                    <td>@Model.UrunAd</td>
+                    <td>@Model.KategoriAd</td>
+                    <td>@Model.UrunStokAdet</td>
+                    <td>@Model.UrunFiyat ₺</td>
+                    <td>@Model.Vergi.Id %</td>
+                    <td>@Model.UrunFiyat ₺</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i></button>
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-close"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+}
